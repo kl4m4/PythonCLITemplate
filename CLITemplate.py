@@ -1,3 +1,5 @@
+import modules.some_module as library
+
 import argparse
 parser = argparse.ArgumentParser()
 
@@ -25,3 +27,5 @@ if(args.flag1):
 ## Only if specified
 if(args.option1): 
     print("Option1 is specified as: {}".format(args.option1))
+
+library.some_function_in_module()
